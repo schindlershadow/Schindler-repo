@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 from cogs.utils import checks
 from cogs.utils.dataIO import fileIO
