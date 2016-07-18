@@ -13,7 +13,7 @@ except:
 servername = "schindlershadow.zapto.org"
 port = "25565"
 
-class redminecraft:
+class Redminecraft:
     """Gets information from a minecraft server!"""
 
     def __init__(self, bot):
