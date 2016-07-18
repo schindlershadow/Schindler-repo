@@ -77,11 +77,10 @@ def save_settings(self):
     fileIO('data/redminecraft/settings.json', 'save', self.settings)
     
 def check_folders():
-    folders = ("data/redminecraft")
-    for folder in folders:
-        if not os.path.exists(folder):
-            print("Creating " + folder + " folder...")
-            os.makedirs(folder)
+    folder = "data/redminecraft"
+    if not os.path.exists(folder):
+        print("Creating " + folder + " folder...")
+        os.makedirs(folder)
     
 def check_files():
     default = {"SERVER": "8.8.8.8", "PORT": 25565}
