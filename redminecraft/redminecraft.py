@@ -16,6 +16,7 @@ class Redminecraft:
 
     def __init__(self, bot):
         self.bot = bot
+        self.settings = fileIO("data/redminecraft/settings.json", 'load')
     
     @commands.command()
     async def xile(self):
@@ -86,7 +87,7 @@ def check_files():
     default = {"SERVER": "8.8.8.8", "PORT": 25565}
     settings_path = "data/redminecraft/settings.json"
     if not os.path.isfile(settings_path):
-        print("Creating default audio settings.json...")
+        print("Creating default redminecraft settings.json...")
         fileIO(settings_path, "save", default)
 
 def setup(bot):
