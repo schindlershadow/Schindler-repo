@@ -17,17 +17,20 @@ class Redminecraft:
     def __init__(self, bot):
         self.bot = bot
         self.settings = fileIO("data/redminecraft/settings.json", 'load')
+        
+    def save_settings(self):
+        fileIO('data/redminecraft/settings.json', 'save', self.settings)
     
-    @commands.command()
+    @commands.command(name = "xile")
     async def xile(self):
         """This does stuff!"""
-        await self.bot.say("Xile sucks!")
+        await self.bot.say("Xile sucks! PYON http://i.imgur.com/BfQtBXj.jpg")
 
     @commands.command(name = "status")
     async def status(self):
         """Get server status"""
 
-        server = getServer()
+        server = getServer(self)
         status = server.status()
         await self.bot.say("The main Infinix server has {0} players and replied in {1} ms".format(status.players.online, status.latency))
 
@@ -35,7 +38,7 @@ class Redminecraft:
     async def latency(self):
         """Get server latency"""
 
-        server = getServer()
+        server = getServer(self)
         latency = server.ping()
         await self.bot.say("The server replied in {0} ms".format(latency))
 
@@ -43,13 +46,13 @@ class Redminecraft:
     async def players(self):
         """Get server players"""
 
-        server = getServer()
+        server = getServer(self)
         query = server.query()
         await self.bot.say("The server has the following players online: {0}".format(", ".join(query.players.names)))
 
     @commands.command(pass_context=True, name = "setserver")
     @checks.is_owner()
-    async def setserver(self, name: str):
+    async def setserver(self, ctx, *, name):
         """Set the server IP/Domain"""
         self.settings["SERVER"] = name
         await self.bot.say("Server set to " + name)
@@ -57,13 +60,13 @@ class Redminecraft:
 
     @commands.command(pass_context=True, name = "setport")
     @checks.is_owner()
-    async def setport(self, name: str):
+    async def setport(self, ctx, *, name):
         """Set server port if not default"""
         self.settings["PORT"] = name
         await self.bot.say("Port set to " + name)
         self.save_settings()
     
-def getServer():
+def getServer(self):
     self.settings = fileIO("data/redminecraft/settings.json", 'load')
     self.server_specific_setting_keys = ["SERVER", "PORT"]
     servername = self.settings["SERVER"]
@@ -73,9 +76,6 @@ def getServer():
         port = 25565
         
     return MinecraftServer(servername, int(port))
-    
-def save_settings(self):
-    fileIO('data/redminecraft/settings.json', 'save', self.settings)
     
 def check_folders():
     folder = "data/redminecraft"
