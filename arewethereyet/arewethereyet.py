@@ -10,7 +10,7 @@ class AreWeThereYet:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name = isfinalmapup)
+    @commands.command(name = "isfinalmapup")
     async def isfinalmapup(self):
         """Is the final map up?"""
 
@@ -30,7 +30,7 @@ class AreWeThereYet:
         await self.bot.say("setfinalmapup set to " + name)
         self.save_settings()
         
-    @commands.command(name = isspongeworking)
+    @commands.command(name = "isspongeworking")
     async def isspongeworking(self):
         """Is the sponge working?"""
 
