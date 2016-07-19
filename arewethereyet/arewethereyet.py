@@ -9,6 +9,9 @@ class AreWeThereYet:
 
     def __init__(self, bot):
         self.bot = bot
+        
+    def save_settings(self):
+        fileIO('data/arewethereyet/settings.json', 'save', self.settings)
 
     @commands.command(name = "isfinalmapup")
     async def isfinalmapup(self):
