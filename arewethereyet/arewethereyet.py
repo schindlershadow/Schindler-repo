@@ -16,7 +16,7 @@ class AreWeThereYet:
 
         isup = getSetting("FINALMAP")
         
-        if isup == "YES" || isup == "yes" || isup == "Yes":
+        if isup == "YES":
             await self.bot.say("FINAL MAP IS UP WOOT")
             
         else:
@@ -36,7 +36,7 @@ class AreWeThereYet:
 
         isup = getSetting("SPONGE")
         
-        if isup == "YES" || isup == "yes" || isup == "Yes":
+        if isup == "YES":
             await self.bot.say("SPONGE IS WORKING WOOT")
             
         else:
