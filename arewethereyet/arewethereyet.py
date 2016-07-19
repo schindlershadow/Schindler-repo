@@ -14,7 +14,7 @@ class AreWeThereYet:
     async def isfinalmapup(self):
         """Is the final map up?"""
 
-        isup = getSetting("FINALMAP")
+        isup = getSetting(self, "FINALMAP")
         
         if isup == "YES":
             await self.bot.say("FINAL MAP IS UP WOOT")
@@ -34,7 +34,7 @@ class AreWeThereYet:
     async def isspongeworking(self):
         """Is the sponge working?"""
 
-        isup = getSetting("SPONGE")
+        isup = getSetting(self, "SPONGE")
         
         if isup == "YES":
             await self.bot.say("SPONGE IS WORKING WOOT")
