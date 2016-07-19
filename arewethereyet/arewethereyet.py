@@ -9,6 +9,7 @@ class AreWeThereYet:
 
     def __init__(self, bot):
         self.bot = bot
+        self.settings = fileIO("data/arewethereyet/settings.json", 'load')
         
     def save_settings(self):
         fileIO('data/arewethereyet/settings.json', 'save', self.settings)
