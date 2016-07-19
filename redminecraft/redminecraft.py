@@ -21,6 +21,11 @@ class Redminecraft:
     def save_settings(self):
         fileIO('data/redminecraft/settings.json', 'save', self.settings)
     
+    @commands.command(name = "nano")
+    async def nano(self):
+        """This does stuff!"""
+        await self.bot.say("もえです！")
+    
     @commands.command(name = "xile")
     async def xile(self):
         """This does stuff!"""
@@ -32,7 +37,7 @@ class Redminecraft:
 
         server = getServer(self)
         status = server.status()
-        await self.bot.say("The main Infinix server has {0} players and replied in {1} ms".format(status.players.online, status.latency))
+        await self.bot.say("The server has {0} players and replied in {1} ms".format(status.players.online, status.latency))
 
     @commands.command(name = "latency")
     async def latency(self):
