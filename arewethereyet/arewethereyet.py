@@ -13,6 +13,31 @@ class AreWeThereYet:
         
     def save_settings(self):
         fileIO('data/arewethereyet/settings.json', 'save', self.settings)
+        
+    @commands.command(name = "nano")
+    async def nano(self):
+        """This does stuff!"""
+        await self.bot.say("もえです！")
+    
+    @commands.command(name = "xile")
+    async def xile(self):
+        """This does stuff!"""
+        await self.bot.say("Xile sucks! PYON http://i.imgur.com/BfQtBXj.jpg")
+        
+    @commands.command(name = "xiletsuntsun")
+    async def xiletsuntsun(self):
+        """This does stuff!"""
+        await self.bot.say("http://i.imgur.com/B3x6n2p.png")
+        
+    @commands.command(name = "banjosmad")
+    async def banjosmad(self):
+        """This does stuff!"""
+        await self.bot.say("http://i.imgur.com/jUM6wH4.png")
+        
+    @commands.command(name = "schindler")
+    async def schindler(self):
+        """This does stuff!"""
+        await self.bot.say("http://schindlershadow.com/avatar.png")
 
     @commands.command(name = "isfinalmapup")
     async def isfinalmapup(self):

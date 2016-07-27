@@ -20,16 +20,6 @@ class Redminecraft:
         
     def save_settings(self):
         fileIO('data/redminecraft/settings.json', 'save', self.settings)
-    
-    @commands.command(name = "nano")
-    async def nano(self):
-        """This does stuff!"""
-        await self.bot.say("もえです！")
-    
-    @commands.command(name = "xile")
-    async def xile(self):
-        """This does stuff!"""
-        await self.bot.say("Xile sucks! PYON http://i.imgur.com/BfQtBXj.jpg")
 
     @commands.command(name = "status")
     async def status(self):
