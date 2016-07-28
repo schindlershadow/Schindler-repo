@@ -45,7 +45,7 @@ class AreWeThereYet:
         await self.bot.say("http://images6.fanpop.com/image/answers/3486000/3486533_1395102856319.13res_392_474.jpg")
         
     @commands.command(name = "trump")
-    async def dafor(self):
+    async def trump(self):
         """This does stuff!"""
         await self.bot.say("https://popculturemecha.files.wordpress.com/2015/07/donald-trump.png")
 
