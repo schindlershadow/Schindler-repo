@@ -42,7 +42,7 @@ class AreWeThereYet:
     @commands.command(name = "dafor")
     async def dafor(self):
         """This does stuff!"""
-        await self.bot.say(":cry:")
+        await self.bot.say("http://images6.fanpop.com/image/answers/3486000/3486533_1395102856319.13res_392_474.jpg")
         
     @commands.command(name = "trump")
     async def dafor(self):
