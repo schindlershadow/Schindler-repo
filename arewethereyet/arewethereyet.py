@@ -42,7 +42,7 @@ class AreWeThereYet:
     @commands.command(name = "dafor")
     async def dafor(self):
         """This does stuff!"""
-        await self.bot.say("😢🍪")
+        await self.bot.say(":cry:")
         
     @commands.command(name = "trump")
     async def dafor(self):
