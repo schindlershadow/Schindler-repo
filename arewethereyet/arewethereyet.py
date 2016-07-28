@@ -38,6 +38,16 @@ class AreWeThereYet:
     async def schindler(self):
         """This does stuff!"""
         await self.bot.say("http://schindlershadow.com/avatar.png")
+        
+    @commands.command(name = "dafor")
+    async def dafor(self):
+        """This does stuff!"""
+        await self.bot.say("😢🍪")
+        
+    @commands.command(name = "trump")
+    async def dafor(self):
+        """This does stuff!"""
+        await self.bot.say("https://popculturemecha.files.wordpress.com/2015/07/donald-trump.png")
 
     @commands.command(name = "isfinalmapup")
     async def isfinalmapup(self):
