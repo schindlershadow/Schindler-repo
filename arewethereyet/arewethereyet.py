@@ -48,6 +48,11 @@ class AreWeThereYet:
     async def trump(self):
         """This does stuff!"""
         await self.bot.say("https://popculturemecha.files.wordpress.com/2015/07/donald-trump.png")
+        
+    @commands.command(name = "thutmose")
+    async def thutmose(self):
+        """This does stuff!"""
+        await self.bot.say("http://img00.deviantart.net/295b/i/2010/169/f/3/commission___shiny_mew_by_senaydragon.png")
 
     @commands.command(name = "isfinalmapup")
     async def isfinalmapup(self):
