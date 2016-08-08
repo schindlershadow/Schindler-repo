@@ -53,6 +53,26 @@ class AreWeThereYet:
     async def thutmose(self):
         """This does stuff!"""
         await self.bot.say("http://img00.deviantart.net/295b/i/2010/169/f/3/commission___shiny_mew_by_senaydragon.png")
+        
+    @commands.command(name = "dubbbz")
+    async def dubbbz(self):
+        """This does stuff!"""
+        await self.bot.say("http://i.imgur.com/IcTWt4T.png")
+        
+    @commands.command(name = "zasshu")
+    async def zasshu(self):
+        """This does stuff!"""
+        await self.bot.say("https://uploads.disquscdn.com/images/8fdf314a1692f107639b972e24c789d8ff0674a8b3ee6f77313b1d79b4fdcb84.jpg")
+        
+    @commands.command(name = "fair")
+    async def fair(self):
+        """This does stuff!"""
+        await self.bot.say("http://pm1.narvii.com/5778/9cebf242160e7f6a8def15184205f2545dc98aeb_hq.jpg")
+        
+    @commands.command(name = "politics")
+    async def politics(self):
+        """This does stuff!"""
+        await self.bot.say("`Everybody complains about politicians. Everybody says they suck. Well, where do people think these politicians come from? They don't fall out of the sky. They don't pass through a membrane from another reality. They come from American parents and American families, American homes, American schools, American churches, American businesses and American universities, and they are elected by American citizens. This is the best we can do folks. This is what we have to offer. It's what our system produces: Garbage in, garbage out. If you have selfish, ignorant citizens, you're going to get selfish, ignorant leaders. Term limits ain't going to do any good; you're just going to end up with a brand new bunch of selfish, ignorant Americans. So, maybe, maybe, maybe, it's not the politicians who suck. Maybe something else sucks around here... like, the public. Yeah, the public sucks. There's a nice campaign slogan for somebody: 'The Public Sucks. Fuck Hope’`")
 
     @commands.command(name = "isfinalmapup")
     async def isfinalmapup(self):
