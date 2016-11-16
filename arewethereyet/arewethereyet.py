@@ -17,7 +17,7 @@ class AreWeThereYet:
     @commands.command(name = "nano")
     async def nano(self):
         """This does stuff!"""
-        await self.bot.say("もえです！")
+        await self.bot.say("もえです！ https://media.giphy.com/media/XP6YS7xG77CI8/giphy.gif")
     
     @commands.command(name = "xile")
     async def xile(self):
@@ -43,11 +43,6 @@ class AreWeThereYet:
     async def schindler(self):
         """This does stuff!"""
         await self.bot.say("http://schindlershadow.com/avatar.png")
-        
-    @commands.command(name = "dafor")
-    async def dafor(self):
-        """This does stuff!"""
-        await self.bot.say("http://images6.fanpop.com/image/answers/3486000/3486533_1395102856319.13res_392_474.jpg")
         
     @commands.command(name = "dafor")
     async def dafor(self):
