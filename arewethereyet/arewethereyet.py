@@ -49,10 +49,15 @@ class AreWeThereYet:
         """This does stuff!"""
         await self.bot.say("http://images6.fanpop.com/image/answers/3486000/3486533_1395102856319.13res_392_474.jpg")
         
-    @commands.command(name = "trump")
+    @commands.command(name = "dafor")
+    async def dafor(self):
+        """This does stuff!"""
+        await self.bot.say("http://images6.fanpop.com/image/answers/3486000/3486533_1395102856319.13res_392_474.jpg")
+        
+    @commands.command(name = "dreyel")
     async def trump(self):
         """This does stuff!"""
-        await self.bot.say("https://popculturemecha.files.wordpress.com/2015/07/donald-trump.png")
+        await self.bot.say("http://i.imgur.com/77rV2Bn.gif")
         
     @commands.command(name = "thutmose")
     async def thutmose(self):
