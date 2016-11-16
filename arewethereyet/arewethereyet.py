@@ -34,6 +34,11 @@ class AreWeThereYet:
         """This does stuff!"""
         await self.bot.say("http://i.imgur.com/jUM6wH4.png")
         
+    @commands.command(name = "banjo")
+    async def banjosmad(self):
+        """This does stuff!"""
+        await self.bot.say("http://giphy.com/gifs/deliverance-YkhcPoRjSNisU")
+        
     @commands.command(name = "schindler")
     async def schindler(self):
         """This does stuff!"""
