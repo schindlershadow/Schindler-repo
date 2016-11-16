@@ -44,6 +44,11 @@ class AreWeThereYet:
         """This does stuff!"""
         await self.bot.say("http://schindlershadow.com/avatar.png")
         
+    @commands.command(name = "musicology")
+    async def schindler(self):
+        """This does stuff!"""
+        await self.bot.say("http://i.kinja-img.com/gawker-media/image/upload/s--wIfFZfoe--/wqdawv0wj6qs0ycgwunv.gif")
+        
     @commands.command(name = "dafor")
     async def dafor(self):
         """This does stuff!"""
