@@ -89,6 +89,13 @@ class AreWeThereYet:
         """This shows mcmyadmin status!"""
         await self.bot.say("http://schindlershadow.zapto.org:8080/status.png")
         
+    @commands.command(name = "download")
+    async def fair(self):
+        """This shows how to download the Infinix ModPack!"""
+        await self.bot.say("How to download and play the Infinix ModPack: \n```markdown\n1. Download Technic Launcher http://www.technicpack.net/download \n2. Open Technic Launcher and click on `ModPacks` \n3. Type `InfiniX Reborn` into the search \n4. Select `InfiniX Reborn` and Click on install \n5. Click on `Launcher Options` on the top right \n6. Click on the Java tab \n7. Set the Memory to a value more than 2.5Gb but less than 6Gb and close the Settings window \n8. Press play, offical server is already saved under multiplayer \n```")
+        await self.bot.say("http://www.technicpack.net/modpack/radioactive-project-bionix.53041")
+        await self.bot.say("Installing Java8 x64 Is Required http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html")
+        
 
     @commands.command(name = "isfinalmapup")
     async def isfinalmapup(self):
