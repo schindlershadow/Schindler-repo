@@ -35,7 +35,7 @@ class AreWeThereYet:
         await self.bot.say("http://i.imgur.com/jUM6wH4.png")
         
     @commands.command(name = "banjo")
-    async def banjosmad(self):
+    async def banjo(self):
         """This does stuff!"""
         await self.bot.say("http://giphy.com/gifs/deliverance-YkhcPoRjSNisU")
         
@@ -45,7 +45,7 @@ class AreWeThereYet:
         await self.bot.say("http://schindlershadow.com/avatar.png")
         
     @commands.command(name = "musicology")
-    async def schindler(self):
+    async def musicology(self):
         """This does stuff!"""
         await self.bot.say("http://i.kinja-img.com/gawker-media/image/upload/s--wIfFZfoe--/wqdawv0wj6qs0ycgwunv.gif")
         
@@ -55,7 +55,7 @@ class AreWeThereYet:
         await self.bot.say("http://images6.fanpop.com/image/answers/3486000/3486533_1395102856319.13res_392_474.jpg")
         
     @commands.command(name = "dreyel")
-    async def trump(self):
+    async def dreyel(self):
         """This does stuff!"""
         await self.bot.say("http://i.imgur.com/77rV2Bn.gif")
         
@@ -85,12 +85,12 @@ class AreWeThereYet:
         await self.bot.say("`Everybody complains about politicians. Everybody says they suck. Well, where do people think these politicians come from? They don't fall out of the sky. They don't pass through a membrane from another reality. They come from American parents and American families, American homes, American schools, American churches, American businesses and American universities, and they are elected by American citizens. This is the best we can do folks. This is what we have to offer. It's what our system produces: Garbage in, garbage out. If you have selfish, ignorant citizens, you're going to get selfish, ignorant leaders. Term limits ain't going to do any good; you're just going to end up with a brand new bunch of selfish, ignorant Americans. So, maybe, maybe, maybe, it's not the politicians who suck. Maybe something else sucks around here... like, the public. Yeah, the public sucks. There's a nice campaign slogan for somebody: 'The Public Sucks. Fuck Hope’` -George Carlin")
         
     @commands.command(name = "mcmyadmin")
-    async def fair(self):
+    async def mcmyadmin(self):
         """This shows mcmyadmin status!"""
         await self.bot.say("http://schindlershadow.zapto.org:8080/status.png")
     
     @commands.command(name = "download")
-    async def fair(self):
+    async def download(self):
         """This shows how to download the Infinix ModPack!"""
         await self.bot.say("How to download and play the Infinix ModPack: \n```markdown\n1. Download Technic Launcher \n2. Open Technic Launcher and click on the `ModPacks` tab \n3. Type `InfiniX Reborn` into the search \n4. Select `InfiniX Reborn` and Click on install \n5. Click on `Launcher Options` on the top right \n6. Click on the Java tab \n7. Set the Memory to a value more than 2.5Gb but less than 6Gb and close the Settings window \n8. Press play, offical server is already saved under multiplayer \n```")
         await self.bot.say("Download Technic Launcher: http://www.technicpack.net/download")
