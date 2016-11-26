@@ -88,7 +88,7 @@ class AreWeThereYet:
     async def fair(self):
         """This shows mcmyadmin status!"""
         await self.bot.say("http://schindlershadow.zapto.org:8080/status.png")
-        
+    
     @commands.command(name = "download")
     async def fair(self):
         """This shows how to download the Infinix ModPack!"""
