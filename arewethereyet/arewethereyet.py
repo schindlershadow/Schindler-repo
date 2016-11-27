@@ -18,6 +18,12 @@ class AreWeThereYet:
     async def nano(self):
         """This does stuff!"""
         await self.bot.say("もえです！ https://media.giphy.com/media/XP6YS7xG77CI8/giphy.gif")
+        
+    @commands.command(name = "biscuit")
+    async def biscuit(self):
+        """This does stuff!"""
+        await self.bot.say("https://www.youtube.com/watch?v=OQSecPdwSl0")
+        await self.bot.say("https://www.youtube.com/watch?v=svWSKQPV8rs")
     
     @commands.command(name = "xile")
     async def xile(self):
