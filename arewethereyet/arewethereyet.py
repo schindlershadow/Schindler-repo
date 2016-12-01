@@ -85,6 +85,11 @@ class AreWeThereYet:
         """This does stuff!"""
         await self.bot.say("http://pm1.narvii.com/5778/9cebf242160e7f6a8def15184205f2545dc98aeb_hq.jpg")
         
+    @commands.command(name = "nurunuru")
+    async def nurunuru(self):
+        """nurunurunurunurunurunurunuru"""
+        await self.bot.say("https://www.youtube.com/watch?v=oYCLd6bUhRQ")
+        
     @commands.command(name = "politics")
     async def politics(self):
         """This does stuff!"""
